@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 import { useGLTF } from "@react-three/drei"
 import React from 'react'
+
 import skyScene from "../assets/3d/sky.glb"
 
 const Sky = () => {

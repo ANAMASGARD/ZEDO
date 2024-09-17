@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unknown-property */
 import {useState, Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
@@ -48,6 +49,9 @@ const [currentStage , setCurrentStage] = useState(1)
 
   return (
     <section className ="w-full h-screen relativee">
+      <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
+        popup
+      </div>
       <Canvas
         className={`w-full h-screen bg-transparent ${
           isRotating ? "cursor-grabbing" : "cursor-grab"
@@ -64,7 +68,7 @@ const [currentStage , setCurrentStage] = useState(1)
             intensity={1}/>
 
             <Bird />
-            <Sky />
+            <Sky isRotating ={isRotating} />
 
             <Island 
             position={islandPosition}

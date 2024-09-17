@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unknown-property */
-import React from 'react'
+import {useRef } from 'react'
 import planeScene from "../assets/3d/plane.glb";
 import { useAnimations, useGLTF } from '@react-three/drei';
 
